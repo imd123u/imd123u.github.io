@@ -1,0 +1,60 @@
+/* General body styling */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+/* Flex container for the two boxes */
+.container {
+  display: flex;
+  gap: 5px; /* Distance between the two boxes */
+}
+
+/* Base styling for the boxes */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+/* Left box with logo background */
+.box1 {
+  background-image: url('images/logo.png');
+  background-size: cover; /* Fill the entire box */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Right box with link images */
+.box2 {
+  position: relative;
+}
+
+/* Link styling within the second box */
+.box2 a {
+  display: inline-block;
+  margin-right: 5px; /* Spacing between link images */
+}
+
+.box2 a:last-child {
+  margin-right: 0; /* No margin after the last link */
+}
+
+/* Image styling inside the links */
+.box2 a,
+.box2 img {
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  border: none; /* Remove any borders */
+  display: inline-block;
+}
+
+/* Image dimensions */
+.box2 img {
+  width: 49px;
+  height: 49px;
+}
